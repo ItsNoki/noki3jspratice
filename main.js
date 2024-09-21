@@ -32,7 +32,7 @@ scene.add(light);
 // 5. Renderer
 const renderer = new THREE.WebGLRenderer({canvas});
 renderer.setSize(window.innerWidth, window.innerHeight);
-render.setPixelRatio(window.devicePixelRatio);
+renderer.setPixelRatio(window.devicePixelRatio);
 
 // 6. Add OrbitControls
 const controls = new OrbitControls(camera, renderer.domElement);
@@ -52,3 +52,4 @@ function animate(){
     controls.update();
     renderer.render(scene, camera);
 }
+animate();
